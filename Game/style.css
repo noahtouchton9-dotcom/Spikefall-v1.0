@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#game {
+    height: 600px;
+    width: 1000px;
+    margin-top: 50px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}
+
+#pauseButton {
+    position: absolute;
+    top: 10px;
+    right: calc(50% - 40px);
+    width: 40px;
+    height: 48px;
+    background-image: url("img/misc/pauseButton.png");
+    background-size: cover;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#pauseMenu {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 500x);
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    display: none;
+    z-index: 999;
+}
+
+.menuButton {
+    width: 400px;
+    height: 50px;
+    cursor: pointer;
+    border: black solid 5px;
+    background-color: #999;
+    border-radius: 10px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+#resumeButton {
+    position: absolute;
+    top: 125px;
+    left: 50px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#resumeButton:hover {
+    background-color: #bbb;
+}
+
+#restartButton {
+    position: absolute;
+    top: 185px;
+    left: calc(50% - 400px / 2);
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#restartButton:hover {
+    background-color: #bbb;
+}
+
+#pausedText {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 200px / 2);
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#cheatIndicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: red;
+    display: none;
+}
